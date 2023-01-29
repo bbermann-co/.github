@@ -1,0 +1,10 @@
+name: test
+
+on:
+  pull-request:
+    - *
+  
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    cmd: echo "Olá mundo!"
