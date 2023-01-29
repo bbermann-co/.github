@@ -2,7 +2,7 @@ name: test
 
 on:
   pull-request:
-    - *
+    - "*"
   
 jobs:
   test:
