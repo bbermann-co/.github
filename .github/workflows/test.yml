@@ -1,10 +1,14 @@
 name: test
 
 on:
-  pull-request:
-    - "*"
+  push:
+    branches: [ master ]
+  pull_request:
+    types: [ opened, synchronize, reopened ]
   
 jobs:
   test:
     runs-on: ubuntu-latest
-    cmd: echo "Olá mundo!"
+    steps:
+      - name: Shutdown Ubuntu MySQL (SUDO)
+        run: echo "Olá mundo!"
