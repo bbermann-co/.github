@@ -10,5 +10,5 @@ jobs:
   test:
     runs-on: ubuntu-latest
     steps:
-      - name: Shutdown Ubuntu MySQL (SUDO)
-        run: echo "Olá mundo!"
+      - name: "Say hello!"
+        run: echo "Hello, ya!"
